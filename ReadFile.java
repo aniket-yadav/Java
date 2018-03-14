@@ -1,8 +1,8 @@
 import java.io.*;
 class ReadFile{
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args){
 		int i;
-		//File file = new File("file.txt");
+	
 		FileInputStream fin;
 		try{
 			fin = new FileInputStream("file.txt");
@@ -10,10 +10,8 @@ class ReadFile{
 			}catch(FileNotFoundException exc){
 				System.out.println("File Not Found ");
 				return;
-			}catch(ArrayIndexOutOfBoundsException exc){
-				System.out.println("Usage : ReadFile File");
-				return;
 			}
+			try{
 			do{
 				i=fin.read();
 				if(i!=-1){
@@ -21,8 +19,10 @@ class ReadFile{
 
 				}
 			}while(i!=-1);
+			     System.out.println();
 			    fin.close();
-			
-
-	}
+			}catch(Exception e){
+				System.out.println(e.getMessage());
+			}
+		}
 }
