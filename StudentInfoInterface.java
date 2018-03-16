@@ -43,10 +43,10 @@ class StudentInfoInterface{
         		mobile.setVisible(false);
         		email.setVisible(false);
         		submit.setVisible(false);
-        		jf.add(new JLabel(roll.getText())).setBounds(110,100,100,30);
-        	    jf.add(new JLabel(name.getText())).setBounds(110,150,100,30);
-        	    jf.add(new JLabel(mobile.getText())).setBounds(110,200,100,30);
-        	    jf.add(new JLabel(email.getText())).setBounds(110,250,100,30);
+        		jf.add(new JLabel(roll.getText())).setBounds(110,100,200,30);
+        	    jf.add(new JLabel(name.getText())).setBounds(110,150,200,30);
+        	    jf.add(new JLabel(mobile.getText())).setBounds(110,200,200,30);
+        	    jf.add(new JLabel(email.getText())).setBounds(110,250,200,30);
         	
         	}
         });
