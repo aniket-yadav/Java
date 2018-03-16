@@ -3,49 +3,18 @@ import java.awt.event.*;
 import java.awt.*;
 class Factorial{
 	public static void main(String[] args) {
-	   JFrame jf = new JFrame();
-       JLabel jl = new JLabel();
-       JLabel jl1 = new JLabel();
+	   JFrame jf = new JFrame("Factorial Calculator");
        JTextField jt = new JTextField();
-       JButton jb = new JButton();
-
-		//Frame
-
-		jf.setTitle("Factorial Calculator");
+       JButton jb = new JButton("ENTER");
 		jf.setSize(400,400);
 		jf.setLocation(400,200);
         jf.setLayout(null);
         jf.setVisible(true);
+        jf.setResizable(false);
         jf.setDefaultCloseOperation(jf.EXIT_ON_CLOSE);
-        jf.add(jl);
-        jf.add(jt);
-        jf.add(jb);
-        jf.add(jl1);
-        
-        //label
-
-        jl.setBounds(20,50,150,40);
-        jl.setText("Enter No:");
-        jl.setFont(new Font("Courier New", Font.BOLD, 24));
-
-        //textfield
-
-        jt.setBounds(150,50,200,40);
-        jt.setFont(new Font("Courier New", Font.BOLD, 24));
-
-        //label2
-        jl1.setBounds(20,200,500,40);
-        jl1.setFont(new Font("Courier New", Font.BOLD, 24));
-
-
-
-
-        //button
-
-        jb.setBounds(250,100,100,35);
-        jb.setText("ENTER");
-        jb.setFont(new Font("Courier New", Font.BOLD, 24));
-
+        jf.add(new JLabel("Enter No:")).setBounds(20,50,150,40);
+        jf.add(jt).setBounds(150,50,200,40);;
+        jf.add(jb).setBounds(250,100,100,35);;
         jb.addActionListener(new ActionListener(){
         	public void actionPerformed(ActionEvent e){
         		  int no =Integer.parseInt(jt.getText());
@@ -55,8 +24,8 @@ class Factorial{
         		  	Fact=Fact*i;
         		  }
         		}
-        		jl1.setText("Factorial of "+Integer.toString(no)+" is "+Long.toString(Fact));
-        	}
+                jf.add(new JLabel("Factorial of "+Integer.toString(no)+" is "+Long.toString(Fact))).setBounds(20,200,500,40);
+        }
         });
 	}
 }
