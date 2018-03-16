@@ -16,7 +16,7 @@ class StudentInfoInterface{
 		jf.setLayout(null);
 		jf.setVisible(true);
 		jf.setDefaultCloseOperation(jf.EXIT_ON_CLOSE);
-	
+	    jf.setResizable(false);
 		//Labels
 
 
