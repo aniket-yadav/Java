@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 import java.util.*;
-public class calculator implements ActionListener{
+public class calculator2 implements ActionListener{
 	JFrame f;
 	JTextField display;
 	JPanel p,p1;
@@ -35,7 +35,7 @@ public class calculator implements ActionListener{
    }
 return 0;
 }
-	calculator(){
+	calculator2(){
      f = new JFrame("Calculator");
      p = new JPanel();
      p1 = new JPanel();
@@ -140,7 +140,7 @@ return 0;
         for(int j=0;j<expression.length;j++){
         	if(expression[j]>='0'&&expression[j]<='9'){
                String value="";
-               while(j<expression.length&&expression[j]>='0'&& expression[j]<='9'){
+               while(j<expression.length&&((expression[j]>='0'&& expression[j]<='9')||expression[j]=='.')){
                  value+=expression[j++];
                }
                --j; 
@@ -187,6 +187,6 @@ return 0;
 }
 } 
 	public static void main(String[] args) {
-		new calculator();
+		new calculator2();
 	}
 }
