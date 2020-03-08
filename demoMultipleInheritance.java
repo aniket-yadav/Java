@@ -1,8 +1,9 @@
-
+//interface name exam
 interface Exam
 {
 	void percent_cal();
 }
+//class name Student
 class Student
 {
 	String name;
@@ -22,6 +23,9 @@ class Student
 		System.out.println ("Marks of Subject 2: "+mark2);
 	}
 }
+
+// class Result inheriting Student class and Exam interface
+
 class Result extends Student implements Exam
 {
 	Result(String n, int r, int m1, int m2)
