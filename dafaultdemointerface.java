@@ -20,7 +20,7 @@ class AB implements B{
 	System.out.println(c);
 	}
 }
-class myclass{
+class dafaultdemointerface{
 	public static void main(String[] args) {
 		AB x = new AB();
 		x.Display();
