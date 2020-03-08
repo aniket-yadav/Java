@@ -1,9 +1,9 @@
 import java.awt.*;  
 import java.awt.event.*;
 import java.net.*;  
-class ip extends Frame implements ActionListener{  
+class ipAddress extends Frame implements ActionListener{  
     TextField t; Label l1,l2; Button b;  
-    ip(){ 
+    ipAddress(){ 
         super("IP Address");
         l1=new Label("Enter URL :");
         l1.setBounds(50,50,200,20);
@@ -39,6 +39,6 @@ class ip extends Frame implements ActionListener{
         }  
     }  
     public static void main(String[] args) {  
-        new ip();  
+        new ipAddress();  
     }  
 }  
