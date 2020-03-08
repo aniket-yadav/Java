@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
-class Factorial{
+class Factorialwithgui{
 	public static void main(String[] args) {
 	   JFrame jf = new JFrame("Factorial Calculator");
        JTextField jt = new JTextField();
