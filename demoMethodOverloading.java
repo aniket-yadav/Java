@@ -1,3 +1,5 @@
+
+// overloading method getRateIfInterest()
 class Bank
 {  
 int getRateOfInterest()
