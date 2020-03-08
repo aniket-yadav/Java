@@ -1,5 +1,5 @@
 import java.util.Stack;
-class stack1{
+class stackdemo{
 	public static void main(String[] args) {
 		Stack<Object> stack = new Stack<Object>();
 		stack.push(8);
