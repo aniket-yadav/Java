@@ -1,8 +1,7 @@
 import java.util.*;
-class g_1{
+class demoVectorwithObject{
 	public static void main(String args[]){
 		Scanner in = new Scanner(System.in);
-		//int di,df,ss;
 		System.out.print("Enter the capacity of the vector: ");
 		Vector<Object> v = new Vector<Object>(in.nextInt(),2);
 		System.out.print("\nEnter the number of elements belonging to each data type: 1. Integer: ");
