@@ -1,4 +1,4 @@
-class myclass{
+class staticmethod{
 	public static void display(){
 		System.out.println("Hello");
 	}
