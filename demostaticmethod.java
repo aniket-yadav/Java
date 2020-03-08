@@ -7,7 +7,7 @@ class zzz{
 		System.out.println("Hi");
 	}
 }
-class myclass{
+class demostaticmethod{
 	public static void main(String[] a){
 		zzz b=new zzz();
 		b.display();
