@@ -1,6 +1,6 @@
 import java.sql.*;
 import java.util.*;
-public class jdbc6{
+public class jdbcinsertdemo{
 	public static void main(String[] args) throws Exception {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con  = DriverManager.getConnection("jdbc:mysql://localhost:3306/registration","root","");
